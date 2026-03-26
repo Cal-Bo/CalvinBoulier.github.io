@@ -1,0 +1,44 @@
+:root {
+    --apl-light: rgb(238, 238, 238);
+    --apl-med-light: rgb(151, 151, 151);
+    --apl-med-dark: rgb(102, 102, 102);
+    --apl-dark: rgb(0, 0, 0);
+
+}
+
+nav {
+    left: 0;
+}
+
+#headshot,
+#resume,
+#projects {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#resume-header,
+#projects-header {
+    text-align: center;
+    padding: 5%;
+}
+
+body {
+    background-color: var(--apl-light);
+}
+
+#projects-header,
+h3 {
+    color: var(--bs-primary);
+}
+
+#front-buttons {
+    width: 20vw;
+    display: grid;
+}
+
+#front-buttons a {
+    margin: 7%;
+    align-items: center;
+}
