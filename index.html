@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calvin Boulier</title>
 
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <script src="bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/toggleWheel.png">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Calvin Boulier</a>
@@ -26,9 +27,8 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#resume-header">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills-header">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects-header">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="YOUR_CONTACT_LINK" target="_blank">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="YOUR_CONTACT_LINK" target="_blank">Contact Me</a></li>
                 <li class="nav-item"><a class="nav-link" href="YOUR_LINKEDIN" target="_blank">LinkedIn</a></li>
                 <li class="nav-item"><a class="nav-link" href="YOUR_GITHUB" target="_blank">GitHub</a></li>
             </ul>
@@ -36,59 +36,65 @@
     </div>
 </nav>
 
-<!-- HERO (3 COLUMN LAYOUT) -->
-<section id="headshot" class="py-5">
+<section id="headshot">
     <div class="container">
         <div class="row justify-content-evenly">
 
-            <!-- LEFT: HEADSHOT -->
+            <!-- LEFT -->
             <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
-                <div class="card w-100 text-center">
-                    <img src="headshot-cutout.png" class="card-img-top img-fluid" alt="Headshot">
-                    <div class="card-body">
+                <div class="card" style="max-width: 80%; margin: auto;">
+                    <img src="./images/headshot-cutout.png" class="card-img-top img-fluid" alt="Headshot">
+                    <div class="card-body text-center">
                         <p><strong>Software Engineering · Systems · Full-Stack</strong></p>
                     </div>
                 </div>
             </div>
 
-            <!-- MIDDLE: ABOUT -->
+            <!-- MIDDLE -->
             <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
-                <div class="card w-100">
+                <div class="card">
                     <div class="card-body">
                         <h3>Computer Science Student</h3>
-                        <h5 class="text-muted">About Me</h5>
+                        <h5 class="text-muted">About Me:</h5>
+
+                        <p>
+                            Throughout my studies I have gained many technical skills, including but not limited to:
+                        </p>
+
+                        <ul>
+                            <li>Algorithm Conceptualization</li>
+                            <li>Systems Programming</li>
+                            <li>Collaborative Software Engineering</li>
+                        </ul>
 
                         <p>
                             I am a Computer Science student at James Madison University with a second major in Anthropology.
                         </p>
 
                         <p>
-                            I build full-stack and systems-level applications using C, Java, Python, and Ruby, with a focus on writing efficient and maintainable code.
+                            I have experience building applications in C, Java, Python, and Ruby, with a focus on writing efficient and reliable code.
                         </p>
 
                         <p>
-                            My projects include a custom programming language and spreadsheet engine, interactive web applications, and network-level tools.
+                            I have developed projects ranging from a custom programming language and spreadsheet engine to interactive web applications.
                         </p>
 
-                        <p>
-                            I am seeking software engineering opportunities to continue developing my skills in problem solving and system design.
-                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT: LINKS -->
+            <!-- RIGHT (SPACED BUTTONS LIKE HIS) -->
             <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
-                <div class="card w-100 text-center">
-                    <div class="card-body d-flex flex-column justify-content-center">
+                <div class="card" style="max-width: 80%; margin: auto;">
+                    <div class="card-body">
 
-                        <a href="#resume-header" class="btn btn-primary mb-2">View Resume</a>
-                        <a href="#projects-header" class="btn btn-outline-secondary mb-2">View Projects</a>
-
-                        <a href="YOUR_LINKEDIN" target="_blank" class="btn btn-outline-secondary mb-2">LinkedIn</a>
-                        <a href="YOUR_GITHUB" target="_blank" class="btn btn-outline-secondary mb-2">GitHub</a>
-
-                        <a href="YOUR_CONTACT_LINK" target="_blank" class="btn btn-primary">Contact Me</a>
+                        <div class="d-grid gap-3">
+                            <a href="#resume-header" class="btn btn-primary">Resume</a>
+                            <a href="#projects-header" class="btn btn-outline-secondary">Projects</a>
+                            <a href="YOUR_LINKEDIN" target="_blank" class="btn btn-outline-secondary">LinkedIn</a>
+                            <a href="YOUR_GITHUB" target="_blank" class="btn btn-outline-secondary">GitHub</a>
+                            <a href="YOUR_CONTACT_LINK" target="_blank" class="btn btn-primary">Contact Me</a>
+                        </div>
 
                     </div>
                 </div>
@@ -99,10 +105,10 @@
 </section>
 
 <!-- RESUME -->
-<div id="resume-header" class="text-center py-4">
-    <a href="files/Calvin_Boulier_Resume.pdf" target="_blank" style="text-decoration:none;">
+<div id="resume-header">
+    <a target="_blank" href="files/Calvin_Boulier_Resume.pdf" style="text-decoration: none">
         <h1>Resume</h1>
-        <p>(Click to view)</p>
+        <p>(Click!)</p>
     </a>
 </div>
 
@@ -110,45 +116,45 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
                     <div class="card-body">
-                        <h4>Intern</h4>
-                        <h5>Historic Staunton Foundation</h5>
-                        <h6>Staunton, VA</h6>
-                        <p><em>Jan 2026 – May 2026</em></p>
+                        <h3>Intern</h3>
+                        <h4>Historic Staunton Foundation</h4>
+                        <h5>Staunton, VA</h5>
+                        <h6><em>Jan 2026 - May 2026</em></h6>
                         <ul>
-                            <li>Developed ArcGIS StoryMaps integrating structured datasets.</li>
+                            <li>Developed ArcGIS StoryMaps using structured datasets.</li>
                             <li>Organized and managed data layers for accurate representation.</li>
-                            <li>Built user-facing digital outputs from research data.</li>
+                            <li>Created user-facing digital outputs from data.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
                     <div class="card-body">
-                        <h4>Field School Student</h4>
-                        <h5>Jamestown Project</h5>
-                        <h6>Williamsburg, VA</h6>
-                        <p><em>Summer 2025</em></p>
+                        <h3>Field School</h3>
+                        <h4>Jamestown Project</h4>
+                        <h5>Williamsburg, VA</h5>
+                        <h6><em>Summer 2025</em></h6>
                         <ul>
-                            <li>Collected and documented structured field data.</li>
+                            <li>Collected and documented structured data.</li>
                             <li>Applied systematic data organization methods.</li>
-                            <li>Collaborated in team-based problem solving.</li>
+                            <li>Worked in a team-based environment.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
                     <div class="card-body">
-                        <h4>Competitive Programming</h4>
-                        <h5>JMU Programming Club</h5>
-                        <h6>Harrisonburg, VA</h6>
-                        <p><em>2023 – Present</em></p>
+                        <h3>Competitive Programming</h3>
+                        <h4>JMU Programming Club</h4>
+                        <h5>Harrisonburg, VA</h5>
+                        <h6><em>2023 - Present</em></h6>
                         <ul>
                             <li>Solve algorithmic problems under time constraints.</li>
                             <li>Write efficient and optimized code.</li>
@@ -162,22 +168,8 @@
     </div>
 </section>
 
-<!-- SKILLS -->
-<div id="skills-header" class="text-center py-4">
-    <h1>Skills</h1>
-</div>
-
-<section id="skills">
-    <div class="container text-center">
-        <p><strong>Languages:</strong> C, C++, Java, Python, Ruby, Rust</p>
-        <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>Tools:</strong> Git, GitHub, Linux</p>
-        <p><strong>Concepts:</strong> Data Structures, Operating Systems, Systems Programming</p>
-    </div>
-</section>
-
 <!-- PROJECTS -->
-<div id="projects-header" class="text-center py-4">
+<div id="projects-header">
     <h1>Projects</h1>
 </div>
 
@@ -185,61 +177,61 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="tui.png" class="card-img-top">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
+                    <img src="images/tui.png" class="card-img-top">
                     <div class="card-body">
-                        <h5>Spreadsheet Engine & Language</h5>
-                        <p><strong>Ruby</strong></p>
+                        <h4>Spreadsheet Engine & Language</h4>
+                        <h5>Ruby</h5>
                         <ul>
                             <li>Built custom programming language (lexer, parser, AST).</li>
                             <li>Implemented spreadsheet with dependency tracking.</li>
-                            <li>Enabled reactive cell updates.</li>
+                            <li>Enabled reactive updates across cells.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="shop-buddy-square.png" class="card-img-top">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
+                    <img src="images/shop-buddy-square.png" class="card-img-top">
                     <div class="card-body">
-                        <h5>Shop-Buddy</h5>
-                        <p><strong>JavaScript</strong></p>
+                        <h4>Shop-Buddy</h4>
+                        <h5>JavaScript</h5>
                         <ul>
                             <li>Interactive shopping interface.</li>
                             <li>Implemented CRUD operations.</li>
-                            <li>Generated printable lists.</li>
+                            <li>Generated shopping lists.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="DNS.png" class="card-img-top">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
+                    <img src="images/DNS.png" class="card-img-top">
                     <div class="card-body">
-                        <h5>Network Ad Blocker</h5>
-                        <p><strong>Raspberry Pi</strong></p>
+                        <h4>Network Ad Blocker</h4>
+                        <h5>Raspberry Pi</h5>
                         <ul>
-                            <li>DNS-level ad blocking system.</li>
-                            <li>Blocked network-wide ads.</li>
-                            <li>Improved bandwidth usage.</li>
+                            <li>Implemented DNS-level filtering.</li>
+                            <li>Blocked ads network-wide.</li>
+                            <li>Improved bandwidth efficiency.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="jmuvies_screenshot.png" class="card-img-top">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card">
+                    <img src="images/jmuvies_screenshot.png" class="card-img-top">
                     <div class="card-body">
-                        <h5>Movie Social Platform</h5>
-                        <p><strong>JavaScript</strong></p>
+                        <h4>Movie Social Platform</h4>
+                        <h5>JavaScript</h5>
                         <ul>
-                            <li>Social media web application.</li>
-                            <li>REST API integration.</li>
-                            <li>User profiles and reviews.</li>
+                            <li>Built social media web app.</li>
+                            <li>Integrated REST APIs.</li>
+                            <li>Supported user interaction and data storage.</li>
                         </ul>
                     </div>
                 </div>
@@ -248,11 +240,6 @@
         </div>
     </div>
 </section>
-
-<!-- FOOTER -->
-<div class="text-center py-4">
-    <p>© 2026 Calvin Boulier</p>
-</div>
 
 </body>
 </html>
