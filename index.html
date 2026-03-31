@@ -36,39 +36,61 @@
     </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO (3 COLUMN LAYOUT) -->
 <section id="headshot" class="py-5">
     <div class="container">
-        <div class="row justify-content-evenly align-items-center">
+        <div class="row justify-content-evenly">
 
-            <div class="col-12 col-md-4 mb-4 text-center">
-                <img src="headshot-cutout.png" class="img-fluid rounded shadow" alt="Headshot">
-                <p class="mt-3"><strong>Software Engineering · Systems · Full-Stack</strong></p>
+            <!-- LEFT: HEADSHOT -->
+            <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
+                <div class="card w-100 text-center">
+                    <img src="headshot-cutout.png" class="card-img-top img-fluid" alt="Headshot">
+                    <div class="card-body">
+                        <p><strong>Software Engineering · Systems · Full-Stack</strong></p>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-md-6">
-                <h2>Computer Science Student</h2>
-                <h5 class="text-muted">About Me</h5>
+            <!-- MIDDLE: ABOUT -->
+            <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h3>Computer Science Student</h3>
+                        <h5 class="text-muted">About Me</h5>
 
-                <p>
-                    I am a Computer Science student at James Madison University, pursuing a second major in Anthropology.
-                </p>
+                        <p>
+                            I am a Computer Science student at James Madison University with a second major in Anthropology.
+                        </p>
 
-                <p>
-                    I have experience developing full-stack applications and systems-level projects using C, Java, Python, and Ruby. My work emphasizes efficiency, clean design, and understanding how software operates at a deeper level.
-                </p>
+                        <p>
+                            I build full-stack and systems-level applications using C, Java, Python, and Ruby, with a focus on writing efficient and maintainable code.
+                        </p>
 
-                <p>
-                    I’ve built projects including a custom programming language with a spreadsheet engine, interactive web applications, and network-level tools.
-                </p>
+                        <p>
+                            My projects include a custom programming language and spreadsheet engine, interactive web applications, and network-level tools.
+                        </p>
 
-                <p>
-                    I am seeking software engineering opportunities where I can contribute to building scalable systems and continue growing as a developer.
-                </p>
+                        <p>
+                            I am seeking software engineering opportunities to continue developing my skills in problem solving and system design.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <div class="mt-3">
-                    <a href="#projects-header" class="btn btn-primary">View Projects</a>
-                    <a href="#resume-header" class="btn btn-outline-secondary">View Resume</a>
+            <!-- RIGHT: LINKS -->
+            <div class="col-12 col-md-5 col-lg-4 mb-4 d-flex">
+                <div class="card w-100 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center">
+
+                        <a href="#resume-header" class="btn btn-primary mb-2">View Resume</a>
+                        <a href="#projects-header" class="btn btn-outline-secondary mb-2">View Projects</a>
+
+                        <a href="YOUR_LINKEDIN" target="_blank" class="btn btn-outline-secondary mb-2">LinkedIn</a>
+                        <a href="YOUR_GITHUB" target="_blank" class="btn btn-outline-secondary mb-2">GitHub</a>
+
+                        <a href="YOUR_CONTACT_LINK" target="_blank" class="btn btn-primary">Contact Me</a>
+
+                    </div>
                 </div>
             </div>
 
@@ -88,7 +110,6 @@
     <div class="container">
         <div class="row">
 
-            <!-- Internship -->
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
@@ -97,32 +118,30 @@
                         <h6>Staunton, VA</h6>
                         <p><em>Jan 2026 – May 2026</em></p>
                         <ul>
-                            <li>Developed ArcGIS StoryMaps integrating structured datasets and historical data.</li>
-                            <li>Managed and organized data layers for accurate spatial representation.</li>
-                            <li>Translated research into user-facing digital applications.</li>
+                            <li>Developed ArcGIS StoryMaps integrating structured datasets.</li>
+                            <li>Organized and managed data layers for accurate representation.</li>
+                            <li>Built user-facing digital outputs from research data.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Field School (optional but reframed) -->
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
                         <h4>Field School Student</h4>
-                        <h5>Jamestown Archaeological Project</h5>
+                        <h5>Jamestown Project</h5>
                         <h6>Williamsburg, VA</h6>
                         <p><em>Summer 2025</em></p>
                         <ul>
-                            <li>Collected and documented structured field data using systematic methodologies.</li>
-                            <li>Applied data organization and analysis techniques in a real-world environment.</li>
-                            <li>Collaborated in a team-based research setting.</li>
+                            <li>Collected and documented structured field data.</li>
+                            <li>Applied systematic data organization methods.</li>
+                            <li>Collaborated in team-based problem solving.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Leadership -->
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
@@ -131,9 +150,9 @@
                         <h6>Harrisonburg, VA</h6>
                         <p><em>2023 – Present</em></p>
                         <ul>
-                            <li>Compete in algorithm-focused programming competitions.</li>
-                            <li>Write efficient code under time constraints.</li>
-                            <li>Collaborate and debug complex problems in team environments.</li>
+                            <li>Solve algorithmic problems under time constraints.</li>
+                            <li>Write efficient and optimized code.</li>
+                            <li>Collaborate on debugging and problem solving.</li>
                         </ul>
                     </div>
                 </div>
@@ -152,7 +171,7 @@
     <div class="container text-center">
         <p><strong>Languages:</strong> C, C++, Java, Python, Ruby, Rust</p>
         <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>Tools:</strong> Git, GitHub, Linux/Unix</p>
+        <p><strong>Tools:</strong> Git, GitHub, Linux</p>
         <p><strong>Concepts:</strong> Data Structures, Operating Systems, Systems Programming</p>
     </div>
 </section>
@@ -166,7 +185,6 @@
     <div class="container">
         <div class="row">
 
-            <!-- Spreadsheet -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100">
                     <img src="tui.png" class="card-img-top">
@@ -174,32 +192,29 @@
                         <h5>Spreadsheet Engine & Language</h5>
                         <p><strong>Ruby</strong></p>
                         <ul>
-                            <li>Built a custom programming language with lexer, parser, and AST.</li>
-                            <li>Implemented spreadsheet engine with dependency tracking.</li>
-                            <li>Enabled reactive updates across cells.</li>
+                            <li>Built custom programming language (lexer, parser, AST).</li>
+                            <li>Implemented spreadsheet with dependency tracking.</li>
+                            <li>Enabled reactive cell updates.</li>
                         </ul>
-                        <a href="YOUR_GITHUB_LINK" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Shop Buddy -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100">
                     <img src="shop-buddy-square.png" class="card-img-top">
                     <div class="card-body">
                         <h5>Shop-Buddy</h5>
-                        <p><strong>JavaScript, HTML, CSS</strong></p>
+                        <p><strong>JavaScript</strong></p>
                         <ul>
-                            <li>Built interactive shopping interface.</li>
-                            <li>Integrated CRUD operations with persistent storage.</li>
-                            <li>Generated printable shopping lists.</li>
+                            <li>Interactive shopping interface.</li>
+                            <li>Implemented CRUD operations.</li>
+                            <li>Generated printable lists.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- DNS -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100">
                     <img src="DNS.png" class="card-img-top">
@@ -207,15 +222,14 @@
                         <h5>Network Ad Blocker</h5>
                         <p><strong>Raspberry Pi</strong></p>
                         <ul>
-                            <li>Implemented DNS-level filtering system.</li>
-                            <li>Blocked ads across entire network.</li>
-                            <li>Improved bandwidth efficiency.</li>
+                            <li>DNS-level ad blocking system.</li>
+                            <li>Blocked network-wide ads.</li>
+                            <li>Improved bandwidth usage.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Movie Site -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100">
                     <img src="jmuvies_screenshot.png" class="card-img-top">
@@ -223,9 +237,9 @@
                         <h5>Movie Social Platform</h5>
                         <p><strong>JavaScript</strong></p>
                         <ul>
-                            <li>Developed social media web app.</li>
-                            <li>Implemented REST API integration.</li>
-                            <li>Supported user profiles and reviews.</li>
+                            <li>Social media web application.</li>
+                            <li>REST API integration.</li>
+                            <li>User profiles and reviews.</li>
                         </ul>
                     </div>
                 </div>
