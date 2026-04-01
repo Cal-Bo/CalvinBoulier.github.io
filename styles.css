@@ -25,9 +25,8 @@ nav {
 }
 
 body {
-    background-color: var(--apl-light);
+    background-color: #f8f9fa; /* very light grey (Bootstrap-like) */
 }
-
 #projects-header,
 h3 {
     color: var(--bs-primary);
